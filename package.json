@@ -1,0 +1,44 @@
+{
+	"name": "fdserver",
+	"version": "0.5.0",
+
+	"description": "fdserver",
+
+	"keyworkds": [
+		"develop",
+		"tools",
+		"server"
+	],
+
+	"author": {
+		"name": "bencode",
+		"email": "bencode@163.com"
+	},
+
+	"contributors": [
+		{
+			"name": "bencode",
+			"email": "bencode@163.com"
+		}
+	],
+
+	"dependencies": {
+
+	},
+
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/fangdeng/fdserver"
+	},
+
+	"main": "index",
+
+	"bin": {
+		"fdserver": "./bin/fdserver"
+	},
+
+	"engines": {
+		"node": "*"
+	}
+
+}

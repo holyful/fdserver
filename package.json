@@ -25,6 +25,8 @@
 	],
 
 	"dependencies": {
+		"send": ">=0.1.1",
+		"connect": ">=2.7.11",
 		"iconv-lite": ">=0.2.10"
 	},
 

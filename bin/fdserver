@@ -1,1 +1,13 @@
 #!/usr/bin/env node
+var server = require('../lib/server'),
+	config = require('../config'),
+	filters = require('../filters'),
+	utils = require('../lib/utils');
+
+config = utils.extend({
+	port: 80,
+	filters: filters	
+}, config);
+
+var app = server(config);
+app.listen(config.port);

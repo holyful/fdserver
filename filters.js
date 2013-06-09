@@ -1,5 +1,7 @@
 module.exports = [
 	'default',
+	'merge',
 	'rewrite',
-	'host'
+	'concat',
+	'host',
 ];

@@ -1,6 +1,8 @@
 module.exports = {
 	// port: 80,
 	// logger: 'default',
+	
+	// root: '/Users/bencode/webroot',
 
 	hosts: {
 		'webroot': {

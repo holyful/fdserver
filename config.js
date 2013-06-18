@@ -13,12 +13,17 @@ module.exports = {
 			rewrite: [
 				{
 					from: '^/app/offer/(.*)$',
-					to: '{root}/styleoffer/$1'
+					to: 'styleoffer/$1'
+				},
+
+				{
+					from: /^\/app\/butterfly\/(.*)\.css\b/,
+					to: 'butterfly/$1.less'
 				},
 
 				{
 					from: '^/app/butterfly/(.*)$',
-					to: '{root}/butterfly/$1'
+					to: 'butterfly/$1'
 				}
 
 			]

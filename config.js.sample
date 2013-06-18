@@ -11,7 +11,7 @@ module.exports = {
 
 		'style.c.aliimg.com': {
 			root: '/Users/bencode/webroot/styles',
-			merge: true,
+			// merge: true,
 			rewrite: [
 				{
 					from: '^/app/offer/(.*)$',

@@ -1,5 +1,8 @@
 #!/usr/bin/env node
-var server = require('../lib/server'),
+var util = require('util'),
+	os = require('os'),
+	cluster = require('cluster'),
+	server = require('../lib/server'),
 	config = require('../config'),
 	filters = require('../filters'),
 	utils = require('../lib/utils');
@@ -9,5 +12,16 @@ config = utils.extend({
 	filters: filters	
 }, config);
 
-var app = server(config);
-app.listen(config.port);
+if (cluster.isMaster) {
+	for (var i = 0, c = os.cpus().length * 2; i < c; i++) {
+		cluster.fork();
+	}
+
+	cluster.on('exit', function(worker, code, signal) {
+		util.log('worker ' + worker.process.pid + ' died');
+	});
+} else {
+	util.log('create server: ' + config.port);
+	var app = server(config);
+	app.listen(config.port);
+}

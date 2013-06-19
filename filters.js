@@ -4,9 +4,8 @@ module.exports = [
 	'less',
 	'markdown',
 	'jade',
-	'default',
 	'delay',
-	'rewrite',
 	'concat',
 	'host',
+	'rewrite'
 ];

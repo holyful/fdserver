@@ -21,7 +21,7 @@ fd-server是一个使用node js开发的服务器
 3. npm install
 4. cp config.js.sample config.js
 5. 修改config.js
-6. sudo node bin/fdserver
+6. sudo node bin/fdserver # linux 等环境下可以使用sudo bin/fdserver直接运行
 
 [注] 
 

@@ -1,9 +1,11 @@
 module.exports = [
 	'config',
-	'merge',
+	/*
 	'less',
 	'markdown',
 	'jade',
+	*/
+	'merge',
 	'delay',
 	'concat',
 	'host',

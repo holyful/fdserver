@@ -47,8 +47,9 @@ exports = module.exports = {
 					from: '^(.*)$',
 					to: 'http://110.75.196.23$1'
 				}
+			],
 
-			]
+			// concatSplit: true
 		}
 	}
 };

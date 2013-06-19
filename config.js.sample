@@ -1,4 +1,4 @@
-module.exports = {
+exports = module.exports = {
 	// port: 80,
 	// logger: 'default',
 	
@@ -9,23 +9,43 @@ module.exports = {
 			root: '/Users/bencode/webroot'
 		},
 
+		'assets.1688.com': {
+			root: '/Users/bencode/webroot/styles/gw3',
+			app: '/Users/bencode/work/gw3',
+			merge: true,
+			remote: 'http://110.75.196.70'
+		},
+
 		'style.c.aliimg.com': {
 			root: '/Users/bencode/webroot/styles',
-			// merge: true,
+
+			//merge: true,
+
 			rewrite: [
+				// app/offer 的less支持
+				{
+					from: /^\/app\/offer\/(.*)\.css\b/,
+					to: 'butterfly/$1.less'
+				},
 				{
 					from: '^/app/offer/(.*)$',
 					to: 'styleoffer/$1'
 				},
 
+				// app/butterfly的less支持
 				{
 					from: /^\/app\/butterfly\/(.*)\.css\b/,
 					to: 'butterfly/$1.less'
 				},
-
 				{
 					from: '^/app/butterfly/(.*)$',
 					to: 'butterfly/$1'
+				},
+
+				// 其他文件代理到线上
+				{
+					from: '^(.*)$',
+					to: 'http://110.75.196.23$1'
 				}
 
 			]

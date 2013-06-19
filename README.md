@@ -28,7 +28,7 @@ fd-server是一个使用node js开发的服务器
 1. 默认是运行在80端口上，所以需要管理员权限
 2. win下启动有少许差异，请自行调整
 3. config.js.sample是配置示例文件，需要重命名为 config.js修改成适合您的情况才能运行
-4. 后续会提供在线配置界面以减化使用
+4. 后续会提供在线配置界面
 
 
 ## 已支持特性
@@ -186,7 +186,7 @@ less文件进行实时编译
 
 	{
 		hosts: {
-			'style.c.aliig.com': {
+			'style.c.aliimg.com': {
 				less: {
 					...
 				}
@@ -194,12 +194,11 @@ less文件进行实时编译
 		}
 	}
 
-
 [注] 
 
 如果原css文件的访问需要url rewrite，则对less的支持也需要url rewrite支持
 
-如
+例：
 
 	'style.c.aliimg.com': {
 		root: '/Users/bencode/webroot/styles',
@@ -261,7 +260,7 @@ http://cdn.c.aliimg.com/css/ui/form|css/ui/table|...|css/ui/tab.css
 
 可以指定参数 jade来配置 jade parser
 
-参考文档[jade readme](https://github.com/visionmedia/jade#readme)
+参考文档 [jade readme](https://github.com/visionmedia/jade#readme)
 
 
 ### markdown

@@ -182,7 +182,9 @@ less文件进行实时编译
 1. 如果访问less文件时，则会自动编译less文件，并返回css输出
 2. 如果访问css文件时，在对应位置有less文件时，则读取此less文件，并编译成css文件输出
 3. 如果less文件对应位置有css文件，则编译好less文件后，会将css代码写回已存在的css文件，达到自动更新功能。如果css文件不存在，则不进行写操作。
-4. 可以指定 less 选项，可参考 [Less中文文档](http://www.lesscss.net/)
+4. 可以指定 less 选项，可参考 [Less中文文档](http://www.lesscss.net/) 
+
+例
 
 	{
 		hosts: {

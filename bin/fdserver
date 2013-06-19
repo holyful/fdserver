@@ -12,7 +12,10 @@ config = utils.extend({
 	filters: filters	
 }, config);
 
-if (cluster.isMaster) {
+var args = process.argv.slice(2),
+	debug = args.indexOf('-d') !== -1;
+
+if (!debug && cluster.isMaster) {
 	for (var i = 0, c = os.cpus().length * 2; i < c; i++) {
 		cluster.fork();
 	}

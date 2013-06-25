@@ -1,4 +1,4 @@
-fd-server 0.6.1
+fd-server 0.6.3
 ===============
 
 fd-server是一个使用node js开发的服务器

@@ -233,6 +233,12 @@ http://assets.1688.com??css/ui/form.css,css/ui/table.css...
 
 http://cdn.c.aliimg.com/css/ui/form|css/ui/table|...|css/ui/tab.css
 
+你首先需要把以上host绑定到本地
+
+如:
+127.0.0.1 asserts.1688.com
+127.0.0.1 cdn.c.aliimg.com
+
 默认情况下，url中的资源会被请求，然后返回合并后的文件
 
 如果配置参数 concatSplit: true, 则会仅仅输出他们的引用，这样在调试时可能会更方便

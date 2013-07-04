@@ -1,21 +1,27 @@
 exports = module.exports = {
 	// port: 80,
-	// logger: 'default',
+	logger: 'dev',
 	
-	// root: '/Users/bencode/webroot',
-
 	hosts: {
 		'webroot': {
 			root: '/Users/bencode/webroot'
 		},
 
+		/**
+		 * static_site
+		 */
+		/*
 		'assets.1688.com': {
-			root: '/Users/bencode/webroot/styles/gw3',
-			app: '/Users/bencode/work/gw3',
+			root: '/home/bencode/work/gw3/static_site',
+			app: '/home/bencode/work/gw3/site_data',
 			merge: true,
 			remote: 'http://110.75.196.70'
 		},
+		*/
 
+		/**
+		 * style示例
+		 */
 		'style.c.aliimg.com': {
 			root: '/Users/bencode/webroot/styles',
 
@@ -53,3 +59,6 @@ exports = module.exports = {
 		}
 	}
 };
+
+// require('./lib/ext/app').prepare(exports.hosts['assets.1688.com']);
+

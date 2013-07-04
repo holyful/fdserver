@@ -30,7 +30,7 @@
 
 	"dependencies": {
 		"send": ">=0.1.1",
-		"connect": ">=2.7.11",
+		"connect": ">=2.7.3",
 		"iconv-lite": ">=0.2.10",
 		"mime": "~1.2.9"
 	},

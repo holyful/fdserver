@@ -56,9 +56,17 @@ exports = module.exports = {
 			],
 
 			// concatSplit: true
+		},
+
+		/**
+		 * style combine 配置 
+		 */
+		'cdn.c.aliimg.com': {
+			//concatSplit: true
 		}
 	}
 };
 
 // require('./lib/ext/app').prepare(exports.hosts['assets.1688.com']);
+
 

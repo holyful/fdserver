@@ -18,7 +18,7 @@ var args = process.argv.slice(2),
 
 debug && (config.debug = true);
 
-util.debug = config.debug ? util.debug : function() {};
+//util.debug = config.debug ? util.debug : function() {};
 
 if (!debug && cluster.isMaster) {
 	for (var i = 0, c = os.cpus().length * 2; i < c; i++) {

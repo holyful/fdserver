@@ -1,5 +1,4 @@
 module.exports = [
-	/*
 	'config',
 	'less',
 	'markdown',
@@ -7,7 +6,6 @@ module.exports = [
 	'merge',
 	'delay',
 	'concat',
-	*/
 	'host',
-	//'rewrite'
+	'rewrite'
 ];
